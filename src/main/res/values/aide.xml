@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- page de téléchargement de l'appli Aide : peut être redéfinie dans res/values de l'appli -->
+    <!-- page de téléchargement de l'appli Coucou : peut être redéfinie dans res/values de l'appli -->
     <string name="aide_site" translatable="false">https://spdyn1.github.io/aide/</string>
     <string name="aide_libelle">Remote help</string>
     <string name="aide_resume">Let someone help you from afar on this phone</string>
-    <string name="aide_absente_titre">Remote Help app needed</string>
-    <string name="aide_absente_texte">To let someone help you from afar, install the free Remote Help app first. It opens a download page; once installed, come back here.</string>
+    <string name="aide_absente_titre">Coucou (remote help) app needed</string>
+    <string name="aide_absente_texte">To let someone help you from afar, install the free Coucou app first. It opens a download page; once installed, come back here.</string>
     <string name="aide_telecharger">Download</string>
     <string name="aide_annuler">Cancel</string>
 </resources>
