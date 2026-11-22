@@ -1,4 +1,4 @@
-package com.spdyn1.aide
+package com.spdyn1.coucou
 
 import android.app.AlertDialog
 import android.content.Context
@@ -8,18 +8,18 @@ import android.net.Uri
 import android.app.Activity
 
 /**
- * Bouton « Aide à distance » des applis spdyn1 : lance l'appli Aide si elle est installée,
+ * Bouton « Aide à distance » des applis spdyn1 : lance l'appli Coucou si elle est installée,
  * sinon propose d'ouvrir sa page de téléchargement.
  *
- * Usage : `AideDistance.lancer(contexte)` depuis un bouton ou une ligne de menu ;
- * le texte du bouton est `getString(R.string.aide_libelle)` (fr/en).
+ * Usage : `CoucouDistance.lancer(contexte)` depuis un bouton ou une ligne de menu ;
+ * le texte du bouton est `getString(R.string.coucou_libelle)` (fr/en).
  */
-object AideDistance {
-    const val PAQUET = "fr.legift.aide"
+object CoucouDistance {
+    const val PAQUET = "fr.legift.coucou"
 
     fun installee(ctx: Context): Boolean = ctx.packageManager.getLaunchIntentForPackage(PAQUET) != null
 
-    /** Lance Aide, ou affiche la proposition de téléchargement. Renvoie true si Aide a été lancée. */
+    /** Lance Coucou, ou affiche la proposition de téléchargement. Renvoie true si Coucou a été lancée. */
     fun lancer(ctx: Context): Boolean {
         val intent = ctx.packageManager.getLaunchIntentForPackage(PAQUET)
         if (intent != null) {
@@ -33,7 +33,7 @@ object AideDistance {
 
     private fun proposer(ctx: Context) {
         val activite = activite(ctx)
-        val site = ctx.getString(R.string.aide_site)
+        val site = ctx.getString(R.string.coucou_site)
         val ouvrir = {
             val voir = Intent(Intent.ACTION_VIEW, Uri.parse(site))
             if (activite == null) voir.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
@@ -41,10 +41,10 @@ object AideDistance {
         }
         if (activite == null) { ouvrir(); return }
         AlertDialog.Builder(activite)
-            .setTitle(R.string.aide_absente_titre)
-            .setMessage(R.string.aide_absente_texte)
-            .setPositiveButton(R.string.aide_telecharger) { _, _ -> ouvrir() }
-            .setNegativeButton(R.string.aide_annuler, null)
+            .setTitle(R.string.coucou_absente_titre)
+            .setMessage(R.string.coucou_absente_texte)
+            .setPositiveButton(R.string.coucou_telecharger) { _, _ -> ouvrir() }
+            .setNegativeButton(R.string.coucou_annuler, null)
             .show()
     }
 

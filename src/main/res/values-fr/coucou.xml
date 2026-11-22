@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="coucou_libelle">Aide à distance</string>
+    <string name="coucou_resume">Laisse quelqu\'un t\'aider à distance sur ce téléphone</string>
+    <string name="coucou_absente_titre">L\'appli Coucou (aide à distance) est nécessaire</string>
+    <string name="coucou_absente_texte">Pour que quelqu\'un puisse t\'aider à distance, installe d\'abord l\'appli gratuite Coucou. Une page de téléchargement va s\'ouvrir ; une fois installée, reviens ici.</string>
+    <string name="coucou_telecharger">Télécharger</string>
+    <string name="coucou_annuler">Annuler</string>
+</resources>
