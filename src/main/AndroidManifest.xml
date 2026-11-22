@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- fusionné dans le manifeste de l'appli : rien à déclarer de son côté -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- visibilité du paquet de l'appli Aide (Android 11+) -->
+    <queries>
+        <package android:name="fr.legift.aide" />
+    </queries>
+</manifest>
