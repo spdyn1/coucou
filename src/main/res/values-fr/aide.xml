@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="aide_libelle">Aide à distance</string>
+    <string name="aide_resume">Laisse quelqu\'un t\'aider à distance sur ce téléphone</string>
     <string name="aide_absente_titre">L\'appli Aide est nécessaire</string>
     <string name="aide_absente_texte">Pour que quelqu\'un puisse t\'aider à distance, installe d\'abord l\'appli gratuite Aide. Une page de téléchargement va s\'ouvrir ; une fois installée, reviens ici.</string>
     <string name="aide_telecharger">Télécharger</string>
